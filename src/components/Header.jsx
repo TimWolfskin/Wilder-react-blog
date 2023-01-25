@@ -11,8 +11,8 @@ const HeaderTop = styled.header`
   top: 0;
   z-index: 30;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 `;
 
 const Container = styled.div`
@@ -23,7 +23,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
 `;
 
@@ -50,40 +50,71 @@ const Li = styled.li`
   list-style: none;
 `;
 
-const SearchContainer = styled.div`
+const InfoContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
 `;
 
-const SearchWrapepr = styled.div`
-  display: flex;
-  border-width: 2px;
-  border-radius: 4px;
+const SearchContainer = styled.div`
+  width: fit-content;
+  height: fit-content;
+  position: relative;
 `;
 
 const SearchInput = styled.input`
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 240px;
+  height: 40px;
+  width: 40px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  background-color: #22a6b3;
+  padding-right: 40px;
+  color: #fff;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  &:focus {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  }
 `;
 
 const SearchButton = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-left-width: 1px;
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
   cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+  &:focus ~ .input-search {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  }
 `;
 
 const LoginWrapper = styled.div`
-  padding-left: 20px;
+  margin-left: 30px;
 `;
 
 const LoginImage = styled.img`
@@ -105,29 +136,43 @@ const Header = () => {
           <Nav>
             <Ul>
               <Li>
-                <Link className="link headerLink" to="/">HOME</Link>
+                <Link className="link headerLink" to="/">
+                  HOME
+                </Link>
               </Li>
               <Li>
-                <Link className="link headerLink" to="/about">ABOUT</Link>
+                <Link className="link headerLink" to="/about">
+                  ABOUT
+                </Link>
               </Li>
               <Li>
-                <Link className="link headerLink" to="/contacts">CONTACTS</Link>
+                <Link className="link headerLink" to="/contacts">
+                  CONTACTS
+                </Link>
               </Li>
               <Li>
-                <Link className="link headerLink" to="/gallery">GALLERY</Link>
+                <Link className="link headerLink" to="/gallery">
+                  GALLERY
+                </Link>
               </Li>
               <Li>
-                <Link className="link headerLink" to="/inspiration">INSPIRATION</Link>
+                <Link className="link headerLink" to="/inspiration">
+                  INSPIRATION
+                </Link>
               </Li>
             </Ul>
           </Nav>
-          <SearchContainer>
-            <SearchWrapepr>
-              <SearchInput type="text" placeholder="Search..." />
+          <InfoContainer>
+            <SearchContainer>
               <SearchButton>
                 <SearchOutlinedIcon />
               </SearchButton>
-            </SearchWrapepr>
+              <SearchInput
+                type="text"
+                className="input-search"
+                placeholder="Type to Search..."
+              />
+            </SearchContainer>
             <LoginWrapper>
               <Link to="/login">
                 <LoginImage
@@ -136,7 +181,7 @@ const Header = () => {
                 />
               </Link>
             </LoginWrapper>
-          </SearchContainer>
+          </InfoContainer>
         </Wrapper>
       </Container>
     </HeaderTop>
