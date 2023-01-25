@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Gallery from "./pages/Gallery";
-import Inspiration from "./pages/Inspiration";
+import Posts from './pages/Posts'
 //import Header from "./components/Header";
 
 function App() {
@@ -38,8 +38,8 @@ function App() {
       element: <Gallery />,
     },
     {
-      path: "/inspiration",
-      element: <Inspiration />,
+      path: "/posts",
+      element: <Posts />,
     },
   ]);
   return (

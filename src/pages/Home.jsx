@@ -1,16 +1,16 @@
-import React from 'react'
-import Banner from '../components/Banner'
-import Header from '../components/Header'
-import Sidebar from '../components/Sidebar'
+import React from "react";
+import Banner from "../components/Banner";
+import Header from "../components/Header";
+import Posts from "../components/AllPosts";
+
 
 const Home = () => {
   return (
     <div>
-        <Header />
-        <Banner />
-        {/* <Sidebar /> */}
+      <Header />
+      <Banner />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
