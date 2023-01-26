@@ -1,10 +1,7 @@
-import { useState } from "react";
 import styled from "styled-components";
 import "../styles/reset.css";
 import "../styles/Global.css";
 import { LatestBlogItems } from "../staticData/data";
-import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
-import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 
 const Container = styled.div`
   max-width: 1440px;
@@ -13,12 +10,12 @@ const Container = styled.div`
 `;
 
 const BlogBox = styled.div`
-  padding-bottom: 100px;
-  height: 100vh;
+  padding-bottom: 50px;
   display: flex;
   position: relative;
   overflow: hidden;
   margin-top: 50px;
+  margin-bottom: 100px;
 `;
 
 const BlogBoxTitle = styled.h3`
