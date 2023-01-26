@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "../styles/reset.css";
 import "../styles/Global.css";
-import { LatestBlogItems } from "../staticData/data";
+import { latestBlogItems } from "../staticData/data";
 
 const Container = styled.div`
   max-width: 1440px;
@@ -93,7 +93,7 @@ const LatestPosts = () => {
       <Container>
         <BlogBoxTitle>Best inspiration posts in this week</BlogBoxTitle>
         <BlogBoxItems>
-          {LatestBlogItems.map((item) => (
+          {latestBlogItems.map((item) => (
             <>
               <BlogBoxItem key={item.id}>
                 <BlogBoxImgLink href="#">
