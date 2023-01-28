@@ -19,13 +19,14 @@ const BlogBox = styled.div`
 `;
 
 const BlogBoxTitle = styled.h3`
-  color: #151c2c;
+  color: #319B59;
   font-family: "Roboto Slab", serif;
   font-size: 36px;
   line-height: 51px;
   margin: 0 auto 30px;
   text-align: center;
   max-width: 430px;
+  font-weight: 600;
 `;
 
 const BlogBoxItems = styled.div`
@@ -94,49 +95,19 @@ const LatestPosts = () => {
         <BlogBoxTitle>Best inspiration posts in this week</BlogBoxTitle>
         <BlogBoxItems>
           {latestBlogItems.map((item) => (
-            <>
-              <BlogBoxItem key={item.id}>
-                <BlogBoxImgLink href="#">
-                  <BlogBoxImage src={item.image} alt="" />
-                </BlogBoxImgLink>
-                <BlogBoxLinks>
-                  <BlogBoxDate>{item.date}</BlogBoxDate>|
-                  <BlogBoxAuthor href="#">{item.Author}</BlogBoxAuthor>|
-                  <BlogBoxTheme href="#">{item.Theme}</BlogBoxTheme>
-                </BlogBoxLinks>
-                <BlogBoxItemTitleLink href="#">
-                  <BlogBoxItemTitle>{item.Title}</BlogBoxItemTitle>
-                </BlogBoxItemTitleLink>
-              </BlogBoxItem>
-
-              <BlogBoxItem key={item.id}>
-                <BlogBoxImgLink href="#">
-                  <BlogBoxImage src={item.image1} alt="" />
-                </BlogBoxImgLink>
-                <BlogBoxLinks>
-                  <BlogBoxDate>{item.date1}</BlogBoxDate>|
-                  <BlogBoxAuthor href="#">{item.Author1}</BlogBoxAuthor>|
-                  <BlogBoxTheme href="#">{item.Theme1}</BlogBoxTheme>
-                </BlogBoxLinks>
-                <BlogBoxItemTitleLink href="#">
-                  <BlogBoxItemTitle>{item.Title1}</BlogBoxItemTitle>
-                </BlogBoxItemTitleLink>
-              </BlogBoxItem>
-
-              <BlogBoxItem key={item.id}>
-                <BlogBoxImgLink href="#">
-                  <BlogBoxImage src={item.image2} alt="" />
-                </BlogBoxImgLink>
-                <BlogBoxLinks>
-                  <BlogBoxDate>{item.date2}</BlogBoxDate>|
-                  <BlogBoxAuthor href="#">{item.Author2}</BlogBoxAuthor>|
-                  <BlogBoxTheme href="#">{item.Theme2}</BlogBoxTheme>
-                </BlogBoxLinks>
-                <BlogBoxItemTitleLink href="#">
-                  <BlogBoxItemTitle>{item.Title2}</BlogBoxItemTitle>
-                </BlogBoxItemTitleLink>
-              </BlogBoxItem>
-            </>
+            <BlogBoxItem key={item.id}>
+              <BlogBoxImgLink href="#">
+                <BlogBoxImage src={item.image} alt="" />
+              </BlogBoxImgLink>
+              <BlogBoxLinks>
+                <BlogBoxDate>{item.date}</BlogBoxDate>|
+                <BlogBoxAuthor href="#">{item.Author}</BlogBoxAuthor>|
+                <BlogBoxTheme href="#">{item.Theme}</BlogBoxTheme>
+              </BlogBoxLinks>
+              <BlogBoxItemTitleLink href="#">
+                <BlogBoxItemTitle>{item.Title}</BlogBoxItemTitle>
+              </BlogBoxItemTitleLink>
+            </BlogBoxItem>
           ))}
         </BlogBoxItems>
       </Container>

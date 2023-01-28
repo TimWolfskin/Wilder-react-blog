@@ -12,17 +12,18 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 `;
 
 const Title = styled.h1`
-  color: #151c2c;
+  color: #319B59;
   font-family: "Roboto Slab", serif;
   font-size: 36px;
   line-height: 51px;
   margin: 0 auto 30px;
   text-align: center;
   max-width: 430px;
+  font-weight: 600;
 `;
 
 const InspirationItems = styled.div`

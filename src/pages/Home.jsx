@@ -4,6 +4,7 @@ import Decor from "../components/Decor";
 import Header from "../components/Header";
 import Inspiration from "../components/Inspiration";
 import LatestPosts from "../components/LatestPosts";
+import NewestPhoto from "../components/NewestPhoto";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <LatestPosts />
       <Decor />
       <Inspiration />
+      <NewestPhoto />
     </div>
   );
 };
