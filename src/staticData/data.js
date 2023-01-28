@@ -33,7 +33,7 @@ export const inspirationItems = [
     id: 1,
     image:
       "https://www.lifespan.org/sites/default/files/lifespan-files/images/blog-images/New-hiking-photo.jpg",
-    title: "spontaneus",
+    title: "relaxed",
   },
   {
     id: 2,
@@ -94,3 +94,36 @@ export const newestPhotoItems = [
       "https://www.saanichnews.com/wp-content/uploads/2021/11/27340933_web1_211130-Impress-WCT-OutdroorsWestFallLaunch-Elk_1.jpg",
   },
 ];
+
+export const latestRecepies = [
+  {
+    id: 1,
+    image: "https://media.timeout.com/images/105766011/750/562/image.jpg",
+    title: "The Food Outside Editors",
+    text: "Always Bring on the Trail",
+  },
+  {
+    id: 2,
+    image: "https://media.timeout.com/images/105766011/750/562/image.jpg",
+    title: "A Vegetarian Runner’s",
+    text: "Quest to Become a Meat Eater",
+  },
+  {
+    id: 3,
+    image: "https://img.jamieoliver.com/home/wp-content/uploads/features-import/2013/08/news-story42.jpg",
+    title: "3 Harvest-Inspired",
+    text: "Mocktails Made with Non-Alcoholic Beer",
+  },
+  {
+    id: 4,
+    image: "https://www.eurekacamping.com/sites/eurekacamping_site/files/eu_blog_25_easy_camp_recipes_main.jpg",
+    title: "Take a Taste of the Wild Side",
+    text: "with These Foraged-Food Adventures",
+  },
+  {
+    id: 5,
+    image: "https://assets.epicurious.com/photos/54f8aa064f77a310045dcb04/1:1/w_1600,c_limit/rosemarycocktail.jpg",
+    title: "Après-Pisco Sour and Pisco Punch",
+    text: "Move over frosty pints and bacon bloody marys",
+  },
+]

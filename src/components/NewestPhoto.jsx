@@ -5,10 +5,12 @@ import "../styles/Global.css";
 import { newestPhotoItems } from "../staticData/data";
 import CloseIcon from "@mui/icons-material/Close";
 
-
 //className model in Global.css file
 const Wrapper = styled.div`
   margin-bottom: 100px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
 `;
 
 const Title = styled.h3`
@@ -79,8 +81,8 @@ const NewestPhoto = () => {
       </Subtitle>
       <>
         <div className={model ? "model open" : "model"}>
-          <img src={tempimgSrc} />
-          <CloseIcon onClick={() => setModel(false)} /> 
+          <img src={tempimgSrc} alt="" />
+          <CloseIcon onClick={() => setModel(false)} />
         </div>
         <Gallery>
           {newestPhotoItems.map((item, index) => {
