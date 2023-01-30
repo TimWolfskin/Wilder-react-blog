@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import "../styles/reset.css";
-import "../styles/Global.css";
+import "../../styles/reset.css";
+import "../../styles/Global.css";
 
 const Wrapper = styled.div`
   background-image: url("https://www.egov.com/wp-content/uploads/2021/03/iStock-618465922-scaled.jpg");

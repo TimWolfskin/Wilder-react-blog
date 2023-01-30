@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import "../styles/reset.css";
 import "../styles/Global.css";
-import Banner from "../components/Banner";
-import Decor from "../components/Decor";
+import Banner from "../components/homeComponents/Banner";
+import Decor from "../components/homeComponents/Decor";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Inspiration from "../components/Inspiration";
-import LatestPosts from "../components/LatestPosts";
-import Mission from "../components/Mission";
-import NewestPhoto from "../components/NewestPhoto";
-import Recepies from "../components/Recepies";
+import Inspiration from "../components/homeComponents/Inspiration";
+import LatestPosts from "../components/homeComponents/LatestPosts";
+import Mission from "../components/homeComponents/Mission";
+import NewestPhoto from "../components/homeComponents/NewestPhoto";
+import Recepies from "../components/homeComponents/Recepies";
 
 
 const Wrapper = styled.div`

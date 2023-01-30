@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import "../styles/reset.css";
-import "../styles/Global.css";
-import { inspirationItems } from "../staticData/data";
+import "../../styles/reset.css";
+import "../../styles/Global.css";
+import { inspirationItems } from "../../staticData/data";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 
 const Container = styled.div`

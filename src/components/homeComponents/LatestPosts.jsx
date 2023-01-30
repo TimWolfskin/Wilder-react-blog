@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import "../styles/reset.css";
-import "../styles/Global.css";
-import { latestBlogItems } from "../staticData/data";
+import "../../styles/reset.css";
+import "../../styles/Global.css";
+import { latestBlogItems } from "../../staticData/data";
 
 const Container = styled.div`
   max-width: 1440px;

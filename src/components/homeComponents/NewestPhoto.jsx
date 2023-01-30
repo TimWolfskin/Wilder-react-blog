@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import "../styles/reset.css";
-import "../styles/Global.css";
-import { newestPhotoItems } from "../staticData/data";
+import "../../styles/reset.css";
+import "../../styles/Global.css";
+import { newestPhotoItems } from "../../staticData/data";
 import CloseIcon from "@mui/icons-material/Close";
 
 //className model in Global.css file

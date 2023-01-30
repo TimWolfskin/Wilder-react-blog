@@ -1,5 +1,5 @@
 import React from "react";
-import videoBg from "../media/banner-video.mp4";
+import videoBg from "../../media/banner-video.mp4";
 import styled from "styled-components";
 
 const Container = styled.div`

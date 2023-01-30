@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import "../styles/reset.css";
-import "../styles/Global.css";
+import "../../styles/reset.css";
+import "../../styles/Global.css";
 
 const Container = styled.div`
   max-width: 1440px;

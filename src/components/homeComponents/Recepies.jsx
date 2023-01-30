@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { latestRecepies } from "../staticData/data";
-import "../styles/reset.css";
-import "../styles/Global.css";
+import { latestRecepies } from "../../staticData/data";
+import "../../styles/reset.css";
+import "../../styles/Global.css";
 
 const Wrapper = styled.div`
   text-align: center;

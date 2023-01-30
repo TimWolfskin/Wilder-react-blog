@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import "../styles/reset.css";
 import "../styles/Global.css";
-import AllPosts from "../components/AllPosts";
+import AllPosts from "../components/postsPageComponents/AllPosts";
 import Header from "../components/Header";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/postsPageComponents/Sidebar";
 import Footer from "../components/Footer";
 
 const Wrapper = styled.div`

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import "../styles/reset.css";
-import "../styles/Global.css";
+import "../../styles/reset.css";
+import "../../styles/Global.css";
 import Post from "./Post";
 
 const Container = styled.div`

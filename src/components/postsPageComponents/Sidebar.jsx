@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import "../styles/reset.css";
-import "../styles/Global.css";
+import "../../styles/reset.css";
+import "../../styles/Global.css";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import TelegramIcon from "@mui/icons-material/Telegram";
