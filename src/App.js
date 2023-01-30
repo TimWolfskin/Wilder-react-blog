@@ -5,17 +5,23 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Gallery from "./pages/Gallery";
-import Posts from './pages/Posts'
-//import Header from "./components/Header";
+import Posts from "./pages/Posts";
+// import Header from "./components/Header";
+// import Footer from "./components/Footer";
 
 function App() {
   // const Layout = () => {
   //   return (
-  //     <div>
-  //       <Header />
+  //     <div className="">
+  //       <div>
+  //         <Header />
+  //         <Outlet />
+  //         <Footer />
+  //       </div>
   //     </div>
   //   );
   // };
+
   const router = createBrowserRouter([
     {
       path: "/",
