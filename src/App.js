@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Gallery from "./pages/Gallery";
 import Posts from "./pages/Posts";
+import SinglePost from "./pages/SinglePost";
 // import Header from "./components/Header";
 // import Footer from "./components/Footer";
 
@@ -47,6 +48,10 @@ function App() {
       path: "/posts",
       element: <Posts />,
     },
+    {
+      path: "/singlepost",
+      element: <SinglePost />
+    }
   ]);
   return (
     <div className="App">
