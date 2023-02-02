@@ -20,6 +20,7 @@ const Overlay = styled.div`
 const Video = styled.video`
   width: 100%;
   height: 100%;
+  margin-top: -62px;
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;

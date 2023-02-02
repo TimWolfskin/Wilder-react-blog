@@ -4,6 +4,7 @@ import "../styles/reset.css";
 import "../styles/Global.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 
 const Wrapper = styled.div`
@@ -16,6 +17,7 @@ const Contacts = () => {
   return (
     <Wrapper>
       <Header />
+      <Contact />
       <Footer />
     </Wrapper>
   )
