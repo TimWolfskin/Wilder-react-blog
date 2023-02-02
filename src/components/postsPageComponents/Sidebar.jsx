@@ -157,8 +157,11 @@ function Sidebar() {
     <Container>
       <Aside>
         <AsideSearch>
-          <AsideSearchInput type="text" placeholder="Search" />
-          <AsideSearchButton class="aside__search-btn" type="submit">
+          <AsideSearchInput
+           type="text" 
+           placeholder="Search"
+            />
+          <AsideSearchButton type="submit">
             <SearchOutlinedIcon />
           </AsideSearchButton>
         </AsideSearch>
@@ -175,7 +178,9 @@ function Sidebar() {
               <BlogCategoryLink>Rock Climbing. (2)</BlogCategoryLink>
             </BlogCategoryItem>
             <BlogCategoryItem>
-              <BlogCategoryLink>Canoeing, kayaking and rafting (4)</BlogCategoryLink>
+              <BlogCategoryLink>
+                Canoeing, kayaking and rafting (4)
+              </BlogCategoryLink>
             </BlogCategoryItem>
             <BlogCategoryItem>
               <BlogCategoryLink>Photography (1)</BlogCategoryLink>
@@ -189,7 +194,7 @@ function Sidebar() {
               <RecentPostsItemTitle href="#">
                 Cred selfies edison bulb four dollar toast humblebrag
               </RecentPostsItemTitle>
-              <RecentPostsDate>August 10, 2020</RecentPostsDate>{" "}|{" "}
+              <RecentPostsDate>August 10, 2020</RecentPostsDate> |{" "}
               <RecentPostsAuthor href="#">by Ann Summers</RecentPostsAuthor>
             </RecentPostsItem>
             <RecentPostsItem>
@@ -197,14 +202,14 @@ function Sidebar() {
                 Semiotics fixie four dollar toast, next level woke scenester
                 direct trade photo booth
               </RecentPostsItemTitle>
-              <RecentPostsDate>September 30 ,2020</RecentPostsDate>{" "}|{" "}
+              <RecentPostsDate>September 30 ,2020</RecentPostsDate> |{" "}
               <RecentPostsAuthor href="#">by Ann Summers</RecentPostsAuthor>
             </RecentPostsItem>
             <RecentPostsItem>
               <RecentPostsItemTitle href="#">
                 Cred selfies edison bulb four dollar toast humblebrag
               </RecentPostsItemTitle>
-              <RecentPostsDate>May 2, 2020</RecentPostsDate>{" "}|{" "}
+              <RecentPostsDate>May 2, 2020</RecentPostsDate> |{" "}
               <RecentPostsAuthor href="#">by Ann Summers</RecentPostsAuthor>
             </RecentPostsItem>
           </RecentPostsList>

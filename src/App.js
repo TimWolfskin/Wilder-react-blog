@@ -45,13 +45,13 @@ function App() {
       element: <Gallery />,
     },
     {
+      path: "/singlepost/:id",
+      element: <SinglePost />
+    },
+    {
       path: "/posts",
       element: <Posts />,
     },
-    {
-      path: "/singlepost",
-      element: <SinglePost />
-    }
   ]);
   return (
     <div className="App">

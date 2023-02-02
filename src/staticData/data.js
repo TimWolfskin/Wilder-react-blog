@@ -110,20 +110,192 @@ export const latestRecepies = [
   },
   {
     id: 3,
-    image: "https://img.jamieoliver.com/home/wp-content/uploads/features-import/2013/08/news-story42.jpg",
+    image:
+      "https://img.jamieoliver.com/home/wp-content/uploads/features-import/2013/08/news-story42.jpg",
     title: "3 Harvest-Inspired",
     text: "Mocktails Made with Non-Alcoholic Beer",
   },
   {
     id: 4,
-    image: "https://www.eurekacamping.com/sites/eurekacamping_site/files/eu_blog_25_easy_camp_recipes_main.jpg",
+    image:
+      "https://www.eurekacamping.com/sites/eurekacamping_site/files/eu_blog_25_easy_camp_recipes_main.jpg",
     title: "Take a Taste of the Wild Side",
     text: "with These Foraged-Food Adventures",
   },
   {
     id: 5,
-    image: "https://assets.epicurious.com/photos/54f8aa064f77a310045dcb04/1:1/w_1600,c_limit/rosemarycocktail.jpg",
+    image:
+      "https://assets.epicurious.com/photos/54f8aa064f77a310045dcb04/1:1/w_1600,c_limit/rosemarycocktail.jpg",
     title: "Après-Pisco Sour and Pisco Punch",
     text: "Move over frosty pints and bacon bloody marys",
   },
-]
+];
+
+export const postItems = [
+  {
+    id: 1,
+    image:
+      "https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Canoeing, kayaking and rafting",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+
+  },
+  {
+    id: 2,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Biskeri-_Camping_I_IMG_7238.jpg/640px-Biskeri-_Camping_I_IMG_7238.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Hiking and camping",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 3,
+    image:
+      "https://cdn.outdoors.org/wp-content/uploads/2022/05/02145434/Lost-Pond-Lost-Pond-Trail-WMNF_Photo-by-Paula-Champagne_7G8A8298-2.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Hiking and camping",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 4,
+    image:
+      "https://www.visitphilly.com/wp-content/uploads/2019/07/kelly-drive-blue-sky-change-by-clara-bucar-archclara-2200x1237px-460x348.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Hiking and camping",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 5,
+    image:
+      "https://cdn.makitatools.com/apps/wms/products/outdooradventure/getoutside_pic.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Hunting and fishing",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 6,
+    image:
+      "https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Hunting and fishing",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 7,
+    image:
+      "https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Hunting and fishing",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 8,
+    image:
+      "https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Rock Climbing",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 9,
+    image:
+      "https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Rock Climbing",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 10,
+    image:
+      "https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Rock Climbing",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 11,
+    image:
+      "https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Photography",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 12,
+    image:
+      "https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Photography",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 13,
+    image:
+      "https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Photography",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 14,
+    image:
+      "https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Canoeing, kayaking and rafting",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+  {
+    id: 15,
+    image:
+      "https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg",
+    date: "August 15, 2020",
+    author: "Ann Summers",
+    theme: "Canoeing, kayaking and rafting",
+    title:
+      "Red selfies edison bulb four dollar toast humblebrag for the furniture",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
+  },
+];

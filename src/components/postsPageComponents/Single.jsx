@@ -3,6 +3,8 @@ import styled from "styled-components";
 import "../../styles/reset.css";
 import "../../styles/Global.css";
 import Sidebar from "./Sidebar";
+import { postItems } from "../../staticData/data";
+import { useParams } from "react-router-dom";
 
 const BlogOne = styled.div`
   margin: 150px 0 150px;
@@ -229,90 +231,42 @@ const BlogOneFormButton = styled.button`
 `;
 
 const Single = () => {
+  const {id} = useParams()
+  const myPost = postItems.find((item) => item.id === parseInt(id))
   return (
     <div>
       <BlogOne>
         <Container>
           <BlogInner>
             <BlogItems>
-              <BlogOneItem>
-                <BlogItemInfo>
-                  <BlogItemLink href="#">
-                    <BlogItemTitle>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </BlogItemTitle>
-                  </BlogItemLink>
-                  <BlogItemDate>August 15, 2020</BlogItemDate> |
-                  <BlogItemAuthor href="#">by Ann Summers</BlogItemAuthor> |
-                  <BlogItemTheme href="#">Hunting and fishing</BlogItemTheme>
-                </BlogItemInfo>
-                <BlogItemImage
-                  src="https://static01.nyt.com/images/2019/07/29/world/29india-tiger1/merlin_143414940_ea235a98-6d46-4c74-886d-6960ddfa86e9-superJumbo.jpg"
-                  alt=""
-                />
-
-                <BlogOneText>
-                  <p>
-                    Everyday carry actually neutra authentic kogi shabby chic
-                    migas small batch craft beer. Literally williamsburg tote
-                    bag farm-to-table mustache ugh deep v irony. Af man bun
-                    copper mug iPhone enamel pin pug selvage hammock palo santo
-                    godard thundercats coloring book yuccie woke. Ugh pok pok
-                    taxidermy pabst enamel pin edison bulb farm-to-table. Yuccie
-                    portland kickstarter, readymade ramps humblebrag ennui banjo
-                    mumblecore vaporware pickled cray stumptown 8-bit mlkshk.
-                    Tumeric tousled austin, kinfolk scenester authentic craft
-                    beer truffaut irony intelligentsia YOLO lomo bushwick
-                    coloring book. Semiotics man bun venmo viral cliche. Tousled
-                    yr williamsburg austin edison bulb cloud bread vegan street
-                    art. Locavore food truck trust fund palo santo asymmetrical,
-                    franzen deep v marfa kogi whatever swag pop-up seitan.
-                  </p>
+                <BlogOneItem>
+                  <BlogItemInfo>
+                    <BlogItemLink href="#">
+                      <BlogItemTitle>
+                        {myPost.title}
+                      </BlogItemTitle>
+                    </BlogItemLink>
+                    <BlogItemDate>{myPost.date}</BlogItemDate> |
+                    <BlogItemAuthor href="#">{myPost.author}</BlogItemAuthor> |
+                    <BlogItemTheme href="#">{myPost.theme}</BlogItemTheme>
+                  </BlogItemInfo>
                   <BlogItemImage
-                    src="https://static01.nyt.com/images/2019/07/29/world/29india-tiger1/merlin_143414940_ea235a98-6d46-4c74-886d-6960ddfa86e9-superJumbo.jpg"
+                    src={myPost.image}
                     alt=""
                   />
-                  <p>
-                    Af man bun copper mug iPhone enamel pin pug selvage hammock
-                    palo santo godard thundercats coloring book yuccie woke. Ugh
-                    pok pok taxidermy pabst enamel pin edison bulb
-                    farm-to-table. Yuccie portland kickstarter, readymade ramps
-                    humblebrag ennui banjo mumblecore vaporware pickled cray
-                    stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk
-                    scenester authentic craft beer truffaut irony intelligentsia
-                    YOLO lomo bushwick coloring book. Semiotics man bun venmo
-                    viral cliche. Tousled yr williamsburg austin edison bulb
-                    cloud bread vegan street art. Locavore food truck trust fund
-                    palo santo asymmetrical, franzen deep v marfa kogi whatever
-                    swag pop-up seitan.
-                  </p>
-                  <BlogItemImage
-                    src="https://static01.nyt.com/images/2019/07/29/world/29india-tiger1/merlin_143414940_ea235a98-6d46-4c74-886d-6960ddfa86e9-superJumbo.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Af man bun copper mug iPhone enamel pin pug selvage hammock
-                    palo santo godard thundercats coloring book yuccie woke. Ugh
-                    pok pok taxidermy pabst enamel pin edison bulb
-                    farm-to-table. Yuccie portland kickstarter, readymade ramps
-                    humblebrag ennui banjo mumblecore vaporware pickled cray
-                    stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk
-                    scenester authentic craft beer truffaut irony intelligentsia
-                    YOLO lomo bushwick coloring book. Semiotics man bun venmo
-                    viral cliche. Tousled yr williamsburg austin edison bulb
-                    cloud bread vegan street art. Locavore food truck trust fund
-                    palo santo asymmetrical, franzen deep v marfa kogi whatever
-                    swag pop-up seitan.
-                  </p>
-                </BlogOneText>
-                <BlogOneTags>
-                  <BlogOneTagsTitle>Tags</BlogOneTagsTitle>
-                  <BlogOneTagsLink href="#">outdoorskills</BlogOneTagsLink>
-                  <BlogOneTagsLink href="#">bushcraft</BlogOneTagsLink>
-                  <BlogOneTagsLink href="#">CampFire</BlogOneTagsLink>
-                  <BlogOneTagsLink href="#">Bushcraft</BlogOneTagsLink>
-                </BlogOneTags>
-              </BlogOneItem>
+                  <BlogOneText>
+                    <p>
+                      {myPost.text}
+                    </p>
+                  </BlogOneText>
+                  <BlogOneTags>
+                    <BlogOneTagsTitle>Tags</BlogOneTagsTitle>
+                    <BlogOneTagsLink href="#">outdoorskills</BlogOneTagsLink>
+                    <BlogOneTagsLink href="#">bushcraft</BlogOneTagsLink>
+                    <BlogOneTagsLink href="#">CampFire</BlogOneTagsLink>
+                    <BlogOneTagsLink href="#">Bushcraft</BlogOneTagsLink>
+                  </BlogOneTags>
+                </BlogOneItem>
               <BlogOneComments>
                 <BlogOneCommentsTitle>Comments:</BlogOneCommentsTitle>
                 <BlogOneCommentsItem>

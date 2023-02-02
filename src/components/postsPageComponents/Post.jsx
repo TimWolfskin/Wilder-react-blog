@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import "../../styles/reset.css";
 import "../../styles/Global.css";
+import { postItems } from "../../staticData/data";
+import { Link } from "react-router-dom";
+
+const BlogItems = styled.div``;
 
 const BlogItem = styled.div`
   margin-bottom: 80px;
@@ -53,33 +57,45 @@ const BlogItemText = styled.p`
   max-width: 700px;
 `;
 
-const Post = () => {
+const Button = styled.button`
+  background: #1aab8a;
+  color: #fff;
+  border: none;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  &:hover {
+    background: #fff;
+    color: #1aab8a;
+  }
+`;
+
+const Post = ({ props }) => {
   return (
-    <BlogItem>
-      <BlogItemImage
-        src="https://www.miamiandbeaches.com/getmedia/460de76a-147f-492e-abdc-926d4a8e0c61/Oleta_State_River_Park_Ecoadventure_1-06-21.jpg"
-        alt=""
-      />
-      <BlogItemInfo>
-        <BlogItemDate>August 15, 2020</BlogItemDate> |
-        <BlogItemAuthor href="#">by Ann Summers</BlogItemAuthor> |
-        <BlogItemTheme href="#">Canoeing, kayaking and rafting</BlogItemTheme>
-      </BlogItemInfo>
-      <BlogItemLink>
-        <BlogItemTitle>
-          Red selfies edison bulb four dollar toast humblebrag for the furniture
-        </BlogItemTitle>
-      </BlogItemLink>
-      <BlogItemText>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
-        architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam
-        dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum
-        fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam
-        dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum
-        fugit vero.
-      </BlogItemText>
-    </BlogItem>
+    <BlogItems>
+      {postItems.map((item) => (
+        <BlogItem key={item.id}>
+          <BlogItemImage src={item.image} alt="" />
+          <BlogItemInfo>
+            <BlogItemDate>{item.date}</BlogItemDate> |
+            <BlogItemAuthor href="#">by {item.author}</BlogItemAuthor> |
+            <BlogItemTheme href="#">{item.theme}</BlogItemTheme>
+          </BlogItemInfo>
+          <BlogItemLink>
+            <BlogItemTitle>{item.title}</BlogItemTitle>
+          </BlogItemLink>
+          <BlogItemText>{item.text}</BlogItemText>
+          <Link className="link" to={`/singlepost/${item.id}`}>
+            <Button> View Details</Button>
+          </Link>
+        </BlogItem>
+      ))}
+    </BlogItems>
   );
 };
 

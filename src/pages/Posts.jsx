@@ -4,7 +4,6 @@ import "../styles/reset.css";
 import "../styles/Global.css";
 import AllPosts from "../components/postsPageComponents/AllPosts";
 import Header from "../components/Header";
-import Sidebar from "../components/postsPageComponents/Sidebar";
 import Footer from "../components/Footer";
 
 const Wrapper = styled.div`
@@ -13,23 +12,11 @@ const Wrapper = styled.div`
   flex-direction: column;
 `;
 
-
-const InnerWrapper = styled.div`
-  display: flex;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 10px;
-  
-`;
-
 const Posts = () => {
   return (
     <Wrapper>
       <Header />
-      <InnerWrapper>
-        <AllPosts />
-        <Sidebar />
-      </InnerWrapper>
+      <AllPosts />
       <Footer />
     </Wrapper>
   );
