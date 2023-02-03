@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import "../styles/reset.css";
 import "../styles/Global.css";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { teamItems } from "../staticData/data";
 
 const Wrapper = styled.div``;
 
@@ -124,8 +128,96 @@ const ItemImage = styled.img`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  object-fit: contain;
   width: 500px;
   height: 320px;
+`;
+
+const Team = styled.div`
+  margin-bottom: 128px;
+`;
+
+const InnerContainer = styled.div`
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 10px;
+`;
+
+const TeamTitle = styled.h4`
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+  margin-bottom: 65px;
+`;
+
+const TeamItems = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const TeamItem = styled.div`
+  width: 302px;
+  height: 366px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const TeamImage = styled.img`
+  width: 152px;
+  height: 152px;
+  background-size: cover;
+  background-position: center;
+  border: 8px solid #319b59;
+  border-radius: 50%;
+  margin-top: 48px;
+  margin-bottom: 26px;
+`;
+
+const TeamName = styled.h6`
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+  margin-bottom: 8px;
+`;
+
+const TeamPosition = styled.p`
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161722;
+  opacity: 0.7;
+  margin-bottom: 16px;
+`;
+
+const TeamSocial = styled.a`
+  display: flex;
+`;
+
+const Socialtem = styled.div`
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+`;
+
+const SocialLink = styled.a`
+  text-decoration: none;
+  color: #161722;
 `;
 
 const AboutComponent = () => {
@@ -240,6 +332,37 @@ const AboutComponent = () => {
             </BenefitsItems>
           </Benefits>
         </Container>
+        <Team>
+          <InnerContainer>
+            <TeamTitle>meet our Inspirational team</TeamTitle>
+            <TeamItems>
+              {teamItems.map((item) => (
+                <TeamItem key={item.id}>
+                  <TeamImage src={item.image} alt="" />
+                  <TeamName>{item.name}</TeamName>
+                  <TeamPosition>{item.position}</TeamPosition>
+                  <TeamSocial>
+                    <Socialtem>
+                      <SocialLink href="">
+                        <TwitterIcon />
+                      </SocialLink>
+                    </Socialtem>
+                    <Socialtem>
+                      <SocialLink href="">
+                        <TelegramIcon />
+                      </SocialLink>
+                    </Socialtem>
+                    <Socialtem>
+                      <SocialLink href="">
+                        <InstagramIcon />
+                      </SocialLink>
+                    </Socialtem>
+                  </TeamSocial>
+                </TeamItem>
+              ))}
+            </TeamItems>
+          </InnerContainer>
+        </Team>
       </Content>
     </Wrapper>
   );

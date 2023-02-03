@@ -299,3 +299,30 @@ export const postItems = [
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam  dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum fugit vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto? Voluptates ut sunt, quas sint ratione, aspernatur totam     dolor molestias aliquam optio veritatis ea assumenda! Quidem atque illum",
   },
 ];
+
+export const teamItems = [
+  {
+    id: 1,
+    image: "https://s.abcnews.com/images/US/gty_harper_lee_02_jc_160219_16x9_992.jpg",
+    name: "Harper Lee",
+    position: "Writter",
+  },
+  {
+    id: 2,
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/28/ErnestHemingway.jpg",
+    name: "Ernest Hemingway",
+    position: "Writter",
+  },
+  {
+    id: 3,
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mark_Twain_by_AF_Bradley.jpg/640px-Mark_Twain_by_AF_Bradley.jpg",
+    name: "Mark Twain",
+    position: "Writter",
+  },
+  {
+    id: 4,
+    image: "https://www.wienerzeitung.at/_em_daten/_cache/image/1x6C6mNvhD5UXgxotg8yv-gEjoDASwcgjKIKWt56dHVV1eAL_-nz_zJmOarz78j4yCHYucmG8dl7gtm-lEyoj_ce-B5D4p5PM0/191205-1416-jules-verne.jpg",
+    name: "Jules Verne",
+    position: "Writter",
+  },
+]
