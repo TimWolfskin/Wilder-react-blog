@@ -4,6 +4,7 @@ import "../styles/reset.css";
 import "../styles/Global.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AboutComponent from "../components/AboutComponent";
 
 const Wrapper = styled.div`
   min-height: 100vh;
@@ -15,6 +16,7 @@ const About = () => {
   return (
     <Wrapper>
       <Header />
+      <AboutComponent />
       <Footer />
     </Wrapper>
   );
