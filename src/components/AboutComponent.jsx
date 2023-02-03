@@ -13,10 +13,11 @@ const Header = styled.div`
   text-align: center;
   padding: 200px;
   margin-top: 0px;
+  margin-bottom: 165px;
 `;
 
 const Container = styled.div`
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
 `;
@@ -28,12 +29,14 @@ const HeaderTitle = styled.h4`
   line-height: 80px;
 `;
 
-const Content = styled.div`
-  padding: 130px 0 40px;
+const Content = styled.div``;
+
+const About = styled.div`
+  margin-bottom: 165px;
 `;
 
 const Title = styled.h3`
-  color:  #363838;
+  color: #161722;
   font-family: "Roboto Slab", serif;
   font-size: 36px;
   line-height: 60px;
@@ -66,6 +69,65 @@ const Text = styled.div`
   }
 `;
 
+const Benefits = styled.div`
+  margin-bottom: 165px;
+`;
+
+const BenefitsItems = styled.div``;
+
+const BenefitsTitle = styled.h3`
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+  margin-bottom: 65px;
+`;
+
+const BenefitsItem = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 95px;
+  max-width: 1024px;
+`;
+
+const ItemContent = styled.div``;
+
+const ItemTitle = styled.h4`
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+  margin-bottom: 16px;
+`;
+
+const ItemText = styled.p`
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #151c2c;
+  max-width: 500px;
+`;
+
+const ItemImage = styled.img`
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 320px;
+`;
+
 const AboutComponent = () => {
   return (
     <Wrapper>
@@ -76,30 +138,107 @@ const AboutComponent = () => {
       </Header>
       <Content>
         <Container>
-          <Title>
-          “I may not have gone where I intended to go, but I think I have ended up where I needed to be”
-          </Title>
-          <Text>
-            <p>
-              Vexillologist vape microdosing freegan pork belly deep v direct
-              trade cray single-origin coffee street art. Viral shaman mustache
-              master cleanse, pour-over affogato poutine copper mug marfa fanny
-              pack normcore. Lo-fi pop-up banjo portland, echo park hammock
-              chillwave literally post-ironic ramps subway tile kitsch. Shaman
-              tumblr fixie echo park street art. Enamel pin vaporware wayfarers,
-              organic succulents hella sustainable cardigan.
-            </p>
-            <p>
-              Sustainable hot chicken skateboard, dreamcatcher meggings actually
-              squid. Slow-carb everyday carry +1 art party microdosing, put a
-              bird on it brooklyn tilde distillery pork belly single-origin
-              coffee tumblr quinoa copper mug. Affogato cold-pressed unicorn,
-              viral intelligentsia leggings raw denim kombucha tote bag
-              messenger bag chambray vape coloring book scenester. Activated
-              charcoal wayfarers church-key tote bag synth brunch. Retro
-              cornhole
-            </p>
-          </Text>
+          <About>
+            <Title>
+              “I may not have gone where I intended to go, but I think I have
+              ended up where I needed to be”
+            </Title>
+            <Text>
+              <p>
+                Vexillologist vape microdosing freegan pork belly deep v direct
+                trade cray single-origin coffee street art. Viral shaman
+                mustache master cleanse, pour-over affogato poutine copper mug
+                marfa fanny pack normcore. Lo-fi pop-up banjo portland, echo
+                park hammock chillwave literally post-ironic ramps subway tile
+                kitsch. Shaman tumblr fixie echo park street art. Enamel pin
+                vaporware wayfarers, organic succulents hella sustainable
+                cardigan.
+              </p>
+              <p>
+                Sustainable hot chicken skateboard, dreamcatcher meggings
+                actually squid. Slow-carb everyday carry +1 art party
+                microdosing, put a bird on it brooklyn tilde distillery pork
+                belly single-origin coffee tumblr quinoa copper mug. Affogato
+                cold-pressed unicorn, viral intelligentsia leggings raw denim
+                kombucha tote bag messenger bag chambray vape coloring book
+                scenester. Activated charcoal wayfarers church-key tote bag
+                synth brunch. Retro cornhole
+              </p>
+            </Text>
+          </About>
+
+          <Benefits>
+            <BenefitsTitle>
+              THE benefits to
+              <br /> read our blog
+            </BenefitsTitle>
+            <BenefitsItems>
+              <BenefitsItem>
+                <ItemContent>
+                  <ItemTitle>find fulfillment and joy</ItemTitle>
+                  <ItemText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit.
+                  </ItemText>
+                </ItemContent>
+                <ItemImage
+                  src="https://www.ashevillechamber.org/wp-content/uploads/2017/11/Play-Outdoors-Marquee.jpg"
+                  alt=""
+                />
+              </BenefitsItem>
+              <BenefitsItem>
+                <ItemImage
+                  src="https://visitidaho.org/content/uploads/2017/03/hiking-fishhook-creek-trail-near-redfish-lake-stanley-2_28103939094_o-512x341.jpg"
+                  alt=""
+                />
+                <ItemContent>
+                  <ItemTitle>our team are trully outdoors lovers</ItemTitle>
+                  <ItemText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit.
+                  </ItemText>
+                </ItemContent>
+              </BenefitsItem>
+              <BenefitsItem>
+                <ItemContent>
+                  <ItemTitle>Always new information</ItemTitle>
+                  <ItemText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit.
+                  </ItemText>
+                </ItemContent>
+                <ItemImage
+                  src="https://cdn.shopify.com/s/files/1/0030/2963/1035/files/homepage_dan_10.11.22_1600x800_crop_top.jpg"
+                  alt=""
+                />
+              </BenefitsItem>
+              <BenefitsItem>
+                <ItemImage
+                  src="https://365atlantatraveler.com/wp-content/uploads/2022/04/fun-things-to-do-outside-1275x850.jpg"
+                  alt=""
+                />
+                <ItemContent>
+                  <ItemTitle>Only prowen information</ItemTitle>
+                  <ItemText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit.
+                  </ItemText>
+                </ItemContent>
+              </BenefitsItem>
+            </BenefitsItems>
+          </Benefits>
         </Container>
       </Content>
     </Wrapper>
