@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import "../../styles/reset.css";
 import "../../styles/Global.css";
@@ -231,42 +231,35 @@ const BlogOneFormButton = styled.button`
 `;
 
 const Single = () => {
-  const {id} = useParams()
-  const myPost = postItems.find((item) => item.id === parseInt(id))
+  const { id } = useParams();
+  const myPost = postItems.find((item) => item.id === parseInt(id));
   return (
     <div>
       <BlogOne>
         <Container>
           <BlogInner>
             <BlogItems>
-                <BlogOneItem>
-                  <BlogItemInfo>
-                    <BlogItemLink href="#">
-                      <BlogItemTitle>
-                        {myPost.title}
-                      </BlogItemTitle>
-                    </BlogItemLink>
-                    <BlogItemDate>{myPost.date}</BlogItemDate> |
-                    <BlogItemAuthor href="#">{myPost.author}</BlogItemAuthor> |
-                    <BlogItemTheme href="#">{myPost.theme}</BlogItemTheme>
-                  </BlogItemInfo>
-                  <BlogItemImage
-                    src={myPost.image}
-                    alt=""
-                  />
-                  <BlogOneText>
-                    <p>
-                      {myPost.text}
-                    </p>
-                  </BlogOneText>
-                  <BlogOneTags>
-                    <BlogOneTagsTitle>Tags</BlogOneTagsTitle>
-                    <BlogOneTagsLink href="#">outdoorskills</BlogOneTagsLink>
-                    <BlogOneTagsLink href="#">bushcraft</BlogOneTagsLink>
-                    <BlogOneTagsLink href="#">CampFire</BlogOneTagsLink>
-                    <BlogOneTagsLink href="#">Bushcraft</BlogOneTagsLink>
-                  </BlogOneTags>
-                </BlogOneItem>
+              <BlogOneItem>
+                <BlogItemInfo>
+                  <BlogItemLink href="#">
+                    <BlogItemTitle>{myPost.title}</BlogItemTitle>
+                  </BlogItemLink>
+                  <BlogItemDate>{myPost.date}</BlogItemDate> |
+                  <BlogItemAuthor href="#">{myPost.author}</BlogItemAuthor> |
+                  <BlogItemTheme href="#">{myPost.theme}</BlogItemTheme>
+                </BlogItemInfo>
+                <BlogItemImage src={myPost.image} alt="" />
+                <BlogOneText>
+                  <p>{myPost.text}</p>
+                </BlogOneText>
+                <BlogOneTags>
+                  <BlogOneTagsTitle>Tags</BlogOneTagsTitle>
+                  <BlogOneTagsLink href="#">outdoorskills</BlogOneTagsLink>
+                  <BlogOneTagsLink href="#">bushcraft</BlogOneTagsLink>
+                  <BlogOneTagsLink href="#">CampFire</BlogOneTagsLink>
+                  <BlogOneTagsLink href="#">Bushcraft</BlogOneTagsLink>
+                </BlogOneTags>
+              </BlogOneItem>
               <BlogOneComments>
                 <BlogOneCommentsTitle>Comments:</BlogOneCommentsTitle>
                 <BlogOneCommentsItem>
@@ -278,9 +271,10 @@ const Single = () => {
                     <BlogOneCommentsName>Lea Brown</BlogOneCommentsName>
                     <BlogOneCommentsDate>August 12, 2020</BlogOneCommentsDate>
                     <BlogOneCommentsText>
-                      Tumeric tousled austin, kinfolk scenester authentic craft
-                      beer truffaut irony intelligentsia YOLO lomo bushwick
-                      coloring book. Semiotics man bun venmo viral cliche
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa ut commodi delectus maxime ea iste. Suscipit totam,
+                      perferendis nemo nesciunt labore laboriosam! Voluptas eius
+                      vel perferendis aperiam totam, nemo libero?
                     </BlogOneCommentsText>
                   </BlogOneCommentsInfo>
                   <BlogOneReply>Reply</BlogOneReply>
@@ -288,7 +282,7 @@ const Single = () => {
               </BlogOneComments>
               <BlogOneForm>
                 <BlogOneFormTitle>Post a Comment</BlogOneFormTitle>
-                <BlogOneFormTextarea placeholder="Your comment"></BlogOneFormTextarea>
+                <BlogOneFormTextarea placeholder="Your comment" />
                 <BlogOneFormInput type="text" placeholder="Your name" />
                 <BlogOneFormInput type="email" placeholder="Your e-mail" />
                 <BlogOneFormLabelinput>

@@ -18,7 +18,6 @@ const Container = styled.div`
 const Aside = styled.aside`
   width: 350px;
   margin-left: 30px;
-  position: fixed;
 `;
 
 const AsideSearch = styled.form`

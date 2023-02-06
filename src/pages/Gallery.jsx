@@ -4,7 +4,7 @@ import "../styles/reset.css";
 import "../styles/Global.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import GalleryPhoto from "../components/GalleryPhoto";
 
 const Wrapper = styled.div`
   min-height: 100vh;
@@ -16,9 +16,10 @@ const Gallery = () => {
   return (
     <Wrapper>
       <Header />
+      <GalleryPhoto />
       <Footer />
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;
