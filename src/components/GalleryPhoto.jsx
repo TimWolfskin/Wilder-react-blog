@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import "../styles/reset.css";
 import "../styles/Global.css";
+import CloseIcon from "@mui/icons-material/Close";
 
 const GalleryPhoto = () => {
   const [query, setQuery] = useState("Nature");
@@ -47,17 +48,36 @@ const GalleryPhoto = () => {
     }
   };
 
+  const [model, setModel] = useState(false);
+  const [tempimgSrc, setTempimgSrc] = useState("");
+
+  const getImg = (image) => {
+    setTempimgSrc(image);
+    setModel(true);
+  };
+
   return (
     <div className="">
+      <div className={model ? "model open" : "model"}>
+        <img src={tempimgSrc} alt="" />
+        <CloseIcon onClick={() => setModel(false)} />
+      </div>
+
       {photos?.map((item, index) => {
         return (
           <div className="" key={index}>
-            <img src={item.src.medium} alt={item.id} />
+            <img
+              src={item.src.medium}
+              alt={item.id}
+              onClick={() => getImg(item.src.large)}
+            />
           </div>
         );
       })}
       <div className="">
-        <button disabled={data?.page === 1} onClick={() => getPhotos("back")}>prev</button>
+        <button disabled={data?.page === 1} onClick={() => getPhotos("back")}>
+          prev
+        </button>
         <button onClick={() => getPhotos("next")}>next</button>
       </div>
     </div>
