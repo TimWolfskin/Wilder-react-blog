@@ -57,23 +57,7 @@ const BlogItemText = styled.p`
   max-width: 700px;
 `;
 
-const Button = styled.button`
-  background: #1aab8a;
-  color: #fff;
-  border: none;
-  position: relative;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 5px;
-  margin-top: 10px;
-  cursor: pointer;
-  transition: 800ms ease all;
-  outline: none;
-  &:hover {
-    background: #fff;
-    color: #1aab8a;
-  }
-`;
+const Button = styled.button``;
 
 const Post = ({ props }) => {
   return (
@@ -91,7 +75,7 @@ const Post = ({ props }) => {
           </BlogItemLink>
           <BlogItemText>{item.text}</BlogItemText>
           <Link className="link" to={`/singlepost/${item.id}`}>
-            <Button> View Details</Button>
+            <Button className="mainBtn"> View Details</Button>
           </Link>
         </BlogItem>
       ))}

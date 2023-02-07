@@ -45,9 +45,6 @@ const Gallery = styled.div`
   grid-gap: 30px 35px;
 `;
 
-// const Pictures = styled.div`
-
-// `;
 
 const Image = styled.img`
   object-fit: cover;
