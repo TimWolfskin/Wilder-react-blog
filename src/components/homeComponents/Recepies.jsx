@@ -43,9 +43,14 @@ const Subtitle = styled.p`
 `;
 
 const Collection = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px;
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* grid-gap: 30px; */
   padding-bottom: 70px;
 `;
 
