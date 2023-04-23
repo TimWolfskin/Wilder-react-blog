@@ -98,6 +98,7 @@ const BenefitsItem = styled.div`
   justify-content: space-between;
   margin-bottom: 95px;
   max-width: 1024px;
+  gap: 20px;
 `;
 
 const ItemContent = styled.div``;

@@ -44,12 +44,15 @@ const Image = styled.img`
 const ButtonsContainer = styled.div`
   padding-top: 50px;
   display: flex;
-  align-items: center; 
+  align-items: center;
 `;
 
 const Button = styled.button`
   margin: 0 auto;
   display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 `;
 
 const GalleryPhoto = () => {
@@ -128,7 +131,7 @@ const GalleryPhoto = () => {
         })}
       </GridContainer>
       <ButtonsContainer>
-        <Button className="mainBtn"  onClick={() => getPhotos("back")}>
+        <Button className="mainBtn" onClick={() => getPhotos("back")}>
           <ArrowBack />
         </Button>
         <Button className="mainBtn" onClick={() => getPhotos("next")}>
