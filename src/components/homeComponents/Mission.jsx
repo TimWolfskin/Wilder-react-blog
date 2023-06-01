@@ -4,7 +4,7 @@ import "../../styles/reset.css";
 import "../../styles/Global.css";
 
 const Wrapper = styled.div`
-  background-image: url("https://www.egov.com/wp-content/uploads/2021/03/iStock-618465922-scaled.jpg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a9/Camping_at_night.jpg");
   background-color: #f6f8fa;
   background-repeat: no-repeat;
   background-size: 50%;
